@@ -1549,11 +1549,11 @@ function PlayPageClient() {
           >
             {/* 播放器 */}
             <div
-              className={`h-full transition-all duration-300 ease-in-out rounded-xl border border-white/0 dark:border-white/30 ${
+              className={`h-full transition-all duration-300 ease-in-out rounded-xl border border-white/0 dark:border-white/30 -mx-5 md:mx-0 ${
                 isEpisodeSelectorCollapsed ? 'col-span-1' : 'md:col-span-3'
               }`}
             >
-              <div className='relative w-full h-[300px] lg:h-full'>
+              <div className='relative w-full aspect-video md:aspect-auto md:h-[300px] lg:h-full'>
                 <div
                   ref={artRef}
                   className='bg-black w-full h-full rounded-xl overflow-hidden shadow-lg'
